@@ -1,11 +1,11 @@
-# General Objective
+# Autoencoders
 In this repository autoencoders are trained for landcover change detection. The 
 
-# Training data
+## Training data
 
-# Workflow
+## Workflow
 (add image)
 
-# Some results
+## Some results
 
-# Main concerns
+## Main concerns
