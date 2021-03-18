@@ -12,7 +12,13 @@ Different autoencoders are trained to decode different landcovers. Because the p
 ![alt text](https://drive.google.com/file/d/1HJZkZKuLULVpzpOUYm_HkRqcx3lzxXod/view?usp=sharing)
 
 ## Results
-- Ideally one autoencoder per pixel would result the best reconstruction. However, that would require an untenable training. In an AOI of 200 * 350 px, 25 autoencoders performed much better than 8 autoencoders but increasing to 100 autoencoders did not show as much improvement.
+- Ideally one autoencoder per pixel would result in the best reconstruction. However, that would require an untenable training. In an AOI of 200 * 350 px, 25 autoencoders (one per pixel) performed much better than 8 autoencoders, but increasing to 100 autoencoders did not show as much improvement.
+- Feature extraction using PCA does not make big improvements in reconstruction. It accelerates the process but it also increased noise in the reconstruction error in Strobbler area. Link: 
+- Hazy training images worsen reconstructions and favour the usefulness of fewer autoencoders. Using clean training images is crucial.
+- Data should be scaled (e.g. sklearn.preprocessing.MinMaxScaler). Link:
 - 
 
 ## Next steps
+- Cloudy pixels (which are not trained) give high error but in the TCC are well reconstructed. See what happens in other spectral bands.
+- Unstable landcovers over time (e.g. seasonal crops) are not well reconstructed. Re-cluster over unstable areas to increase the number of autoencoders. Clusters to be reclustered in more groups can be selected based in their data distribution (max, min, mean...)
+- Is clustering really helping? a) try random testing without clusters, b) telect training pixels manually.
