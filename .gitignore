@@ -1,8 +1,18 @@
-# Large Images
+# Large raster Images
 images/
+/images/
 /home/boku/autoencoders/images/
-.tiff
-.tif
+*.tiff
+*.tif
+*.tif.aux.xml
+
+# Large figures
+/Figures/
+*.png
+
+# Random
+*.nc
+*.DS_store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
