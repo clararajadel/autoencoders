@@ -1,7 +1,7 @@
 
 This folder contains the code, autoencoder models and figures resulting from the application of autoencoders in the area of Strobler.
 
-DATE: 19-03-2021 (last modification)
+DATE: 22-03-2021 (last modification)
 
 DETAILS:
 - Area of study: Strobler
