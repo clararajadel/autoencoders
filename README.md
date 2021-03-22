@@ -10,9 +10,9 @@ Code scripts are divided in three folders inside "codes" directory: **updated**,
 - **tuning**: codes for parameter range selection
 
 ### How are structured?
-**updated** directory is structured as follows:
+- **updated** directory is structured as follows:
   >updated >area >name (=main property) ==> .ipynb inside updated
-**experiment** and **tuning** are structured as follows:
+- **experiment** and **tuning** are structured as follows:
   >experiment/tuning >experiment_name/tuning_name >area >name (=main property) ==> .ipynb inside experiment_name/tuning_name
  
  **"name"** serves to differenciate between results coming from the same script but with slightly differences in their properties/parameters.
