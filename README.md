@@ -32,8 +32,8 @@ Different autoencoders are trained to decode different landcovers. Because the p
 - Hazy training images worsen reconstructions and favour the usefulness of fewer autoencoders. Using clean training images is crucial.
 - Data should be scaled (e.g. sklearn.preprocessing.MinMaxScaler).
 
-### Access to more detailed results:
-
+### Access to results:
+https://drive.google.com/drive/folders/1eiAnVHKclJtQbJQo65DX9Ajn5oqmWjSL?usp=sharing
 
 ## Next steps
 - Cloudy pixels (which are not trained) give high error but in the TCC are well reconstructed. See what happens in other spectral bands.
