@@ -24,7 +24,7 @@ Code scripts are divided in three folders inside "codes" directory: **updated**,
 ## Workflow
 Different autoencoders are trained to decode different landcovers. Because the process is unsupervised clustering is done to assign different landcovers.
 
-![Optional Text](../master/myFolder/image.png)
+<img src="https://user-images.githubusercontent.com/60873133/111997897-cc209f80-8b1b-11eb-930d-74411f3e5420.PNG" width="90%"></img> 
 
 ## Results
 - Ideally one autoencoder per pixel would result in the best reconstruction. However, that would require an untenable training. In an AOI of 200 * 350 px, 25 autoencoders (one per pixel) performed much better than 8 autoencoders, but increasing to 100 autoencoders did not show as much improvement.
