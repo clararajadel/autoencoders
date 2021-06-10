@@ -5,7 +5,7 @@ https://esdac.jrc.ec.europa.eu/projects/lucas
 ### Worflow
 
 1- Train autoencoder with LUCAS database
-  1.1.) Download LUCAS data from: [here](https://esdac.jrc.ec.europa.eu/content/lucas2015-topsoil-data#tabs-0-description=0)
+  1.1.) Download LUCAS data from [here](https://esdac.jrc.ec.europa.eu/content/lucas2015-topsoil-data#tabs-0-description=0)
 
 2- Predict and get the error
 
