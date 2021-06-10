@@ -2,7 +2,19 @@ Training data from LUCAS dataset is used to train one autoencoder that reconstru
 
 Link to LUCAS:
 https://esdac.jrc.ec.europa.eu/projects/lucas
+### Worflow
 
-How to establish what is a good reconstructed pixel vs a vad one?
-- Clustering over reconstruction can be one option
-- 
+1- Train autoencoder with LUCAS database
+2- Predict and get the error
+3- Discriminate between bare soil and other land covers
+  a) kmeans over error bands array
+  b) sum all bands error and make segmentation
+    b.1) Ideas segmentación de imágenes
+    b.2) Grey scale: imagen de una banda con valores continuos
+    b.3) https://nl.mathworks.com/help/images/marker-controlled-watershed-segmentation.html
+    
+ 
+### Applications
+- Bare soil detection
+- Deforestation (paper?)
+    
