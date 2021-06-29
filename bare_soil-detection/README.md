@@ -2,7 +2,7 @@ Training data from LUCAS dataset is used to train one autoencoder that reconstru
 
 Link to LUCAS:
 https://esdac.jrc.ec.europa.eu/projects/lucas
-### Worflow
+### Workflow
 
 1. Train autoencoder with LUCAS database
   * Download LUCAS data from [here](https://esdac.jrc.ec.europa.eu/content/lucas2015-topsoil-data#tabs-0-description=0)
