@@ -1,0 +1,7 @@
+ 
+1. curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
+2. sudo apt-get install git-lfs
+3. cd some-git-repository/
+4. git lfs install
+5. git lfs track "*.csv"
+6. git commit and push
