@@ -1,0 +1,60 @@
+****************************************************************************************************
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'number_neurons': 14, 'optimizer': 'Adam', 'batch_size': None, 'RMSE': 3981.0}
+****************************************************************************************************
+
+Test error is lower than train error.
+I change "random seed" in train test split (1996 to 1961) to avoid:
+1. training set had many 'hard' cases to learn
+2. validation set had mostly 'easy' cases to predict
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'number_neurons': 14, 'optimizer': 'Adam', 'batch_size': None, 'RMSE': 4530.0}
+****************************************************************************************************
+
+I leave seed 1961
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'number_neurons': 20, 'optimizer': 'Adam', 'batch_size': None, 'RMSE': 3486.0}
+****************************************************************************************************
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'number_neurons': 10, 'optimizer': 'Adam', 'batch_size': None, 'RMSE': 5092.0}
+****************************************************************************************************
+
+I try to add more info for training. So I change train and test size. Test size until now was 0.3.
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'test_size': 0.2, 'number_neurons': 10, 'optimizer': 'Adam', 'batch_size': None, 'RMSE': 4725.0}
+****************************************************************************************************
+
+I save total error for training and testing (testing error should be higher than training)
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'test_size': 0.2, 'number_neurons': 10, 'optimizer': 'Adam', 'batch_size': None, 'train_error': 0.2174426718847826, 'test_error': 0.14441791316494346, 'RMSE': 4822.0}
+****************************************************************************************************
+
+I redo 20 neurons to see hoyw it loks in the prediction
+{'bands': Index(['B1', 'B1_1', 'B1_2', 'B1_3', 'B2', 'B2_1', 'B2_2', 'B2_3', 'B3',
+       'B3_1', 'B3_2', 'B3_3', 'B4', 'B4_1', 'B4_2', 'B4_3', 'B5', 'B5_1',
+       'B5_2', 'B5_3', 'B6', 'B6_1', 'B6_2', 'B6_3', 'B7', 'B7_1', 'B7_2',
+       'B7_3'],
+      dtype='object'), 'test_size': 0.2, 'number_neurons': 10, 'optimizer': 'Adam', 'batch_size': None, 'train_error': 0.1950589851476252, 'test_error': 0.12131851876620203, 'RMSE': 4965.0}
+
+______________________________________________________________________________________________________
+IDEA: in QGIS select only bareland points and see where my data comes from.
+QUESTION: is there very few training data?
+_________________________________________________________________________________________________________
