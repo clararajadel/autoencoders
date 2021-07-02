@@ -58,3 +58,7 @@ ________________________________________________________________________________
 IDEA: in QGIS select only bareland points and see where my data comes from.
 QUESTION: is there very few training data?
 _________________________________________________________________________________________________________
+****************************************************************************************************
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+REPEAT: I changed all data structure. Now there are 7 reflectances and one date as features.
+{'bands': Index(['B1', 'B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'date'], dtype='object'), 'test_size': 0.3, 'number_neurons': 5, 'optimizer': 'Adam', 'batch_size': None, 'train_error': 0.0480477181263268, 'test_error': 0.020675475359894335, 'RMSE': 590.0}
