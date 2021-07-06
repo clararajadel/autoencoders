@@ -1,3 +1,6 @@
+# numpy files
+*.npy
+!*.npy
 
 # Large raster Images
 images/
